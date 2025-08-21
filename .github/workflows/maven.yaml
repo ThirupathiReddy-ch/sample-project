@@ -30,4 +30,10 @@ jobs:
       # Run tests
       - name: Run Tests
         run: mvn test
-
+      
+       # Upload the packaged JAR as artifact
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: spring-boot-sample
+          path: target/*.jar
