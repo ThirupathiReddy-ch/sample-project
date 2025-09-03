@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String home() {
-        return "Hello, Spring Boot app is running!";
+        return "Hello, your app is running!";
     }
 
     @GetMapping("/hello")
