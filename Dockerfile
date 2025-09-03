@@ -1,5 +1,5 @@
 FROM openjdk:21-jdk
-WORKDIR /ap
+WORKDIR /app
 COPY ./target/*.jar /app
 
 EXPOSE 8080
